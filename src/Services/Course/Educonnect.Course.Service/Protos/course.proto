@@ -1,0 +1,64 @@
+syntax = "proto3";
+package CourseGrpcService;
+service Course {
+	rpc GetCourseSearchData(CourseSearchRequest) returns (CourseSearchResponseList) {}
+}
+message CourseSearchRequest {
+string InstituteCourseCampusId=1;
+string InstituteId=2;
+string AssignedTo=3;
+string State=4;
+string StateCode=5;
+string CourseLevel=6;
+string CourseLevelId=7 ;
+string StudyMode=8;
+string DeliveryMode=9;
+string Target=10;
+string CourseArea=11;
+string CourseAreaId=12;
+string InstituteCourseId=13;
+string SearchText=14;
+string CourseFee=15;
+string CourseFeePeriod=16;
+string DisplayCourseFee=17;
+string Duration=18;
+string Scholarship=19;
+}
+message CourseSearchResponse {
+	 string InstituteCourseCampusId=1;
+	 string CourseLevel =2;
+	 int32 CourseId =3;
+	 int32 InstituteCourseId =4;
+	 int32 CampusId =5;
+	 string InstituteTradingName =6;
+	 string SpecificCourseName =7;
+	 int32 InstituteId =8;
+	 int32 Publish =9;
+
+	 int32 CourseAreaId =10;
+	 string CourseAreas =11;
+	 bool IsFeeRange =12;
+	 string ImagePath =13;
+	 string DeliveryModeTypeId =14;
+	 string StudyModeId =15;
+	 string TargetId =16;
+	 int32 Country =17;
+	 int32 State =18;
+	 string StreetAddressLine1 =19;
+	 string Suburb =20;
+	 string CountryName =21;
+	 string CountryCode =22;
+	 int32 MinFee =23;
+	 int32 MaxFee =24;
+	 int32 CourseFeePeriod =25;
+	 bool DisplayCourseFee =26;
+	 int32 CourseFee =27;
+	 int32 MaxDuration =28;
+	 int32 MinDuration =29;
+	 int32 DurationValue =30;
+	 bool IsDurationRange =31;
+	 int32 DurationTypeId =32;
+}
+message CourseSearchResponseList{
+	repeated CourseSearchResponse items=1;
+}

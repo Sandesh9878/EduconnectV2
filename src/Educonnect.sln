@@ -1,0 +1,105 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{08F3FA48-CA84-4530-A48C-BF84B840245D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{8C2C0FD2-AAB9-47BA-91FB-447AB58558C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Educonnect.Common.Service", "Services\Common\Educonnect.Common.Service\Educonnect.Common.Service.csproj", "{D91DB047-2AEE-40EB-B6B9-D79D675CF011}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{21EB4C29-DF04-478D-BFB4-69E2ACD2AF10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{531F98E1-1B5E-463F-A363-47A4394CA681}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Educonnect.Student.Mobile.API", "Gateways\Mobile\Educonnect.Student.Mobile.API\Educonnect.Student.Mobile.API.csproj", "{E76CE13A-CECA-477B-AD14-527B2E483781}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9661FB42-06AC-4F9B-9AC5-AC956251C111}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{B658ED0E-9200-43C0-92A7-343F40A4207D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{784C45AB-12E2-4360-B3DD-DEF907CF6433}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Educonnect.Core", "Core\Educonnect.Core\Educonnect.Core.csproj", "{4C70ABB1-9251-4388-AAE6-1D31EDC999FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Course", "Course", "{65A0E355-19B5-4408-AC3F-63BFA6F85C78}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Educonnect.Identity.Service", "Services\Identity\Educonnect.Identity.Service\Educonnect.Identity.Service.csproj", "{F6540106-91D7-42CA-BC73-4831EE494B5E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Educonnect.Course.Service", "Services\Course\Educonnect.Course.Service\Educonnect.Course.Service.csproj", "{2D2979BA-1B56-4571-BBE1-8AA6BA7C7DC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1A8617C5-EE00-474B-989C-15A13CA5AF96}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Institute", "Institute", "{6E319638-2C50-4F9F-A616-7A73DC993B59}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Educonnect.Institute.Service", "Services\Institute\Educonnect.Institute.Service\Educonnect.Institute.Service.csproj", "{7A23F47F-D9CF-48F9-BA91-E94CB1FA2D64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Student", "Student", "{90C05739-8B32-4F4C-B786-B888C7472912}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Educonnect.Student.Service", "Services\Student\Educonnect.Student.Service\Educonnect.Student.Service.csproj", "{C069F48A-804B-4C66-A91F-9AC06AE48429}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D91DB047-2AEE-40EB-B6B9-D79D675CF011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91DB047-2AEE-40EB-B6B9-D79D675CF011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D91DB047-2AEE-40EB-B6B9-D79D675CF011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D91DB047-2AEE-40EB-B6B9-D79D675CF011}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E76CE13A-CECA-477B-AD14-527B2E483781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E76CE13A-CECA-477B-AD14-527B2E483781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E76CE13A-CECA-477B-AD14-527B2E483781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E76CE13A-CECA-477B-AD14-527B2E483781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9661FB42-06AC-4F9B-9AC5-AC956251C111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9661FB42-06AC-4F9B-9AC5-AC956251C111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9661FB42-06AC-4F9B-9AC5-AC956251C111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9661FB42-06AC-4F9B-9AC5-AC956251C111}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C70ABB1-9251-4388-AAE6-1D31EDC999FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C70ABB1-9251-4388-AAE6-1D31EDC999FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C70ABB1-9251-4388-AAE6-1D31EDC999FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C70ABB1-9251-4388-AAE6-1D31EDC999FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6540106-91D7-42CA-BC73-4831EE494B5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6540106-91D7-42CA-BC73-4831EE494B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6540106-91D7-42CA-BC73-4831EE494B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6540106-91D7-42CA-BC73-4831EE494B5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D2979BA-1B56-4571-BBE1-8AA6BA7C7DC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D2979BA-1B56-4571-BBE1-8AA6BA7C7DC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D2979BA-1B56-4571-BBE1-8AA6BA7C7DC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D2979BA-1B56-4571-BBE1-8AA6BA7C7DC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A23F47F-D9CF-48F9-BA91-E94CB1FA2D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A23F47F-D9CF-48F9-BA91-E94CB1FA2D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A23F47F-D9CF-48F9-BA91-E94CB1FA2D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A23F47F-D9CF-48F9-BA91-E94CB1FA2D64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C069F48A-804B-4C66-A91F-9AC06AE48429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C069F48A-804B-4C66-A91F-9AC06AE48429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C069F48A-804B-4C66-A91F-9AC06AE48429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C069F48A-804B-4C66-A91F-9AC06AE48429}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8C2C0FD2-AAB9-47BA-91FB-447AB58558C8} = {08F3FA48-CA84-4530-A48C-BF84B840245D}
+		{D91DB047-2AEE-40EB-B6B9-D79D675CF011} = {8C2C0FD2-AAB9-47BA-91FB-447AB58558C8}
+		{531F98E1-1B5E-463F-A363-47A4394CA681} = {21EB4C29-DF04-478D-BFB4-69E2ACD2AF10}
+		{E76CE13A-CECA-477B-AD14-527B2E483781} = {531F98E1-1B5E-463F-A363-47A4394CA681}
+		{B658ED0E-9200-43C0-92A7-343F40A4207D} = {08F3FA48-CA84-4530-A48C-BF84B840245D}
+		{4C70ABB1-9251-4388-AAE6-1D31EDC999FE} = {784C45AB-12E2-4360-B3DD-DEF907CF6433}
+		{65A0E355-19B5-4408-AC3F-63BFA6F85C78} = {08F3FA48-CA84-4530-A48C-BF84B840245D}
+		{F6540106-91D7-42CA-BC73-4831EE494B5E} = {B658ED0E-9200-43C0-92A7-343F40A4207D}
+		{2D2979BA-1B56-4571-BBE1-8AA6BA7C7DC9} = {65A0E355-19B5-4408-AC3F-63BFA6F85C78}
+		{6E319638-2C50-4F9F-A616-7A73DC993B59} = {08F3FA48-CA84-4530-A48C-BF84B840245D}
+		{7A23F47F-D9CF-48F9-BA91-E94CB1FA2D64} = {6E319638-2C50-4F9F-A616-7A73DC993B59}
+		{90C05739-8B32-4F4C-B786-B888C7472912} = {08F3FA48-CA84-4530-A48C-BF84B840245D}
+		{C069F48A-804B-4C66-A91F-9AC06AE48429} = {90C05739-8B32-4F4C-B786-B888C7472912}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A483A280-FFB9-48B1-AFC7-5604968BD375}
+	EndGlobalSection
+EndGlobal

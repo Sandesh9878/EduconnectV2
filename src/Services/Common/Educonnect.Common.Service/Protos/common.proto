@@ -1,0 +1,19 @@
+syntax = "proto3";
+package CommonGrpcService;
+
+service Common {
+	rpc GetAllLookupData(LookupDataRequest) returns (AllLookupDataResponse) {}
+}
+message LookupDataRequest {
+	int32 pageSize = 1;
+	int32 pageIndex = 2;
+}
+message AllLookupDataResponse{
+	repeated LookupDataResponse items=1;
+}
+message LookupDataResponse {
+	int32 id = 1;
+	string name = 2;
+	string value=3;
+	int32 order=4;
+}

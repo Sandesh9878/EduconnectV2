@@ -1,0 +1,36 @@
+syntax = "proto3";
+package CommonGrpcService;
+
+service FormBuf {
+	rpc GetLeadQuestionAnswers(Empty) returns (AllLeadQualificationData) {}
+}
+message LeadQualificationOptions{
+	string title =1;
+	string score =2;
+	bool isSendEmail =3;
+	string displaySequence =4;
+	string currentStep =5;
+	string nextStep =6;
+	bool isSupportiveTextRequired =7;
+}
+message LeadOptions{
+	repeated LeadQualificationOptions options=1;
+}
+message LeadQualificationQuestionAnswers{
+	int32 id =1;
+	string question =2;
+	string title =3;
+	string type =4;
+	bool isMandatory =5;
+	repeated LeadQualificationOptions options=6;
+	string nextStep =7;
+	string score =8;
+	string step =9;
+}
+message AllLeadQualificationData{
+	repeated LeadQualificationQuestionAnswers Questions=1;
+}
+
+message Empty {
+
+}

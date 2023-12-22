@@ -1,0 +1,43 @@
+version: '3.4'
+
+services:
+  common-service:
+    image: ${DOCKER_REGISTRY-}educonnectcommonservice
+    build:
+      context: .
+      dockerfile: Services/Common/Educonnect.Common.Service/Dockerfile
+
+  educonnect.student.mobile.api:
+    image: ${DOCKER_REGISTRY-}educonnectstudentmobileapi
+    build:
+      context: .
+      dockerfile: Gateways/Mobile/Educonnect.Student.Mobile.API/Dockerfile
+
+
+  identity-service:
+    image: ${DOCKER_REGISTRY-}educonnectidentityservice
+    build:
+      context: .
+      dockerfile: Services/Identity/Educonnect.Identity.Service/Dockerfile
+
+
+  course-service:
+    image: ${DOCKER_REGISTRY-}educonnectcourseservice
+    build:
+      context: .
+      dockerfile: Services/Course/Educonnect.Course.Service/Dockerfile
+
+
+  institute-service:
+    image: ${DOCKER_REGISTRY-}educonnectinstituteservice
+    build:
+      context: .
+      dockerfile: Services/Institute/Educonnect.Institute.Service/Dockerfile
+
+
+  student-service:
+    image: ${DOCKER_REGISTRY-}educonnectstudentservice
+    build:
+      context: .
+      dockerfile: Services/Student/Educonnect.Student.Service/Dockerfile
+

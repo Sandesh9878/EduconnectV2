@@ -1,0 +1,12 @@
+﻿global using Microsoft.EntityFrameworkCore;
+global using Educonnect.Institute.Service.Entities;
+global using AutoMapper;
+global using Grpc.Core;
+global using InstituteGrpcService;
+global using static InstituteGrpcService.Institute;
+global using MediatR;
+global using Educonnect.Institute.Service.Context;
+global using Educonnect.Institute.Service.Application.Queries;
+global using Educonnect.Institute.Service.Services;
+global using Microsoft.AspNetCore.Server.Kestrel.Core;
+global using System.Net;

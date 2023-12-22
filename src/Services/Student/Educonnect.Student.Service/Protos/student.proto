@@ -1,0 +1,27 @@
+syntax = "proto3";
+package StudentGrpcService;
+service Student {
+	rpc GetStudents(StudentRequest) returns (StudentsResponse) {}
+	rpc GetApplications(StudentApplicationRequest) returns (StudentApplicationRespones) {}
+}
+message StudentRequest {
+	int32 pageSize = 1;
+	int32 pageIndex = 2;
+}
+message StudentApplicationRequest{
+	string userId=1;
+}
+message StudentResponse {
+	 int32 PersonId=1;
+	 string Title =2;
+	 string FirstName =3;
+	 string LastName =4;
+	 int32 Gender =5;
+	 string PrimaryEmail =6;
+}
+message StudentsResponse{
+	repeated StudentResponse items=1;
+}
+message StudentApplicationRespones{
+	repeated int32 applicationId =1;
+}

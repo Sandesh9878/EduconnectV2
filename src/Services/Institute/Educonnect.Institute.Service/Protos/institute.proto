@@ -1,0 +1,20 @@
+syntax = "proto3";
+package InstituteGrpcService;
+service Institute {
+	rpc GetInstitutes(InstituteRequest) returns (InstitutesResponse) {}
+}
+message InstituteRequest {
+	int32 pageSize = 1;
+	int32 pageIndex = 2;
+}
+message InstituteResponse {
+	 int32 InstituteId=1;
+	 int32 ParentInstituteId =2;
+	 int32 Country =3;
+	 string InstituteCode =4;
+	 string InstituteLegalName =5;
+	 string InstituteTradingName =6;
+}
+message InstitutesResponse{
+	repeated InstituteResponse items=1;
+}
